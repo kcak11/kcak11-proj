@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+span{
+font-size:44px;
+padding:2px;
+border:1px solid #ffffff;
+}
+span:hover{
+color:#ff0000;
+border:1px solid #ff0000;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function populatedata(){
+var data=[];
+for(var i=0;i<22000;i++){
+data.push(" <span title=\""+i+"\">&#"+i+";</span>");
+}
+document.write(data.join(""));
+}
+populatedata();
+</script>
+</body>
+</html>
